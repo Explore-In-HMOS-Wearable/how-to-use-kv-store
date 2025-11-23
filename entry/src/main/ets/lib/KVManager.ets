@@ -52,7 +52,7 @@ export default class KVManager {
       return await this.kvStore?.get(key);
     } catch (e) {
       let err = e as BusinessError;
-      console.log(`Error occurred. Code: ${err.code}, message: ${err.message}`)
+      console.error(`Error occurred. Code: ${err.code}, message: ${err.message}`)
       return '';
     }
   }
@@ -68,7 +68,7 @@ export default class KVManager {
       });
     } catch (e) {
       let error = e as BusinessError;
-      console.log(`Error ${error.message}`);
+      console.error(`Error ${error.message}`);
     }
   }
 

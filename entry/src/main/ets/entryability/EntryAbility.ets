@@ -12,7 +12,7 @@ export default class EntryAbility extends UIAbility {
     let context = this.context;
     const kvManagerConfig: distributedKVStore.KVManagerConfig = {
       context: context,
-      bundleName: 'com.hmosdemos.kvstore',
+      bundleName: 'com.hmosdemos.kvstore'
     };
     let kvManager: distributedKVStore.KVManager | undefined = undefined;
     try {
